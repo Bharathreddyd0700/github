@@ -20,57 +20,122 @@
         <h1>Git & GitHub — Quick Starter</h1>
         <p>A tiny reference page with common commands and workflow for learning Git and GitHub.</p>
     </header>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Learning Git & GitHub</title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <div class="card">
+            <header class="hero">
+                <img class="logo" src="/assets/git-logo.svg" alt="Git logo" />
+                <div>
+                    <h1 class="title">Learning Git &amp; GitHub</h1>
+                    <p class="subtitle">A tiny demo to practice commits, pushes, and GitHub Actions</p>
+                </div>
+                <div style="margin-left:auto"><span class="badge">Beginner</span></div>
+            </header>
 
-    <section>
-        <h2>Initialize a repo</h2>
-        <p>Create a local repository and make your first commit:</p>
-        <pre><code>git init
+            <section style="margin-top:20px">
+                <h2>Quick Git commands</h2>
+                <pre>
+git init
+git add .
+git commit -m "initial commit"
+git branch -M main
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Learning Git & GitHub</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="card">
+            <header class="hero">
+                <img class="logo" src="assets/git-logo.svg" alt="Git logo" />
+                <div>
+                    <h1 class="title">Learning Git &amp; GitHub</h1>
+                    <p class="subtitle">A tiny demo to practice commits, pushes, and GitHub Actions</p>
+                </div>
+                <div style="margin-left:auto"><span class="badge">Beginner</span></div>
+            </header>
+
+            <section style="margin-top:20px">
+                <h2>Quick Git commands</h2>
+                <pre>
+git init
+git add .
+git commit -m "initial commit"
+git branch -M main
+git remote add origin &lt;your-repo-url&gt;
+git push -u origin main
+                </pre>
+            </section>
+
+            <section style="margin-top:18px">
+                <h2>What this repo includes</h2>
+                <ul>
+                    <li>The learning page you see now.</li>
+                    <li>A small GitHub Actions workflow in <code>.github/workflows/ci.yml</code>.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Initialize a repo</h2>
+                <p>Create a local repository and make your first commit:</p>
+                <pre><code>git init
 git add README.md
 git commit -m "Initial commit"</code></pre>
-    </section>
+            </section>
 
-    <section>
-        <h2>Common commands</h2>
-        <ul>
-            <li>Check status: <code>git status</code></li>
-            <li>See history: <code>git log --oneline --graph --all</code></li>
-            <li>Create branch: <code>git checkout -b feature</code></li>
-            <li>Switch branch: <code>git checkout main</code></li>
-            <li>Merge: <code>git merge feature</code></li>
-            <li>Stash changes: <code>git stash</code></li>
-            <li>Apply stash: <code>git stash apply</code></li>
-        </ul>
-    </section>
+            <section>
+                <h2>Common commands</h2>
+                <ul>
+                    <li>Check status: <code>git status</code></li>
+                    <li>See history: <code>git log --oneline --graph --all</code></li>
+                    <li>Create branch: <code>git checkout -b feature</code></li>
+                    <li>Switch branch: <code>git checkout main</code></li>
+                    <li>Merge: <code>git merge feature</code></li>
+                    <li>Stash changes: <code>git stash</code></li>
+                    <li>Apply stash: <code>git stash apply</code></li>
+                </ul>
+            </section>
 
-    <section>
-        <h2>Connect to GitHub</h2>
-        <p>Link local repo to a remote and push:</p>
-        <pre><code>git remote add origin https://github.com/username/repo.git
+            <section>
+                <h2>Connect to GitHub</h2>
+                <p>Link local repo to a remote and push:</p>
+                <pre><code>git remote add origin https://github.com/username/repo.git
 git branch -M main
 git push -u origin main</code></pre>
-    </section>
+            </section>
 
-    <section>
-        <h2>Typical GitHub flow</h2>
-        <ol>
-            <li>Fork or clone the repo: <code>git clone &lt;url&gt;</code></li>
-            <li>Create a feature branch: <code>git checkout -b my-feature</code></li>
-            <li>Work, add, commit locally</li>
-            <li>Push your branch: <code>git push origin my-feature</code></li>
-            <li>Open a Pull Request on GitHub and request review</li>
-        </ol>
-    </section>
+            <section>
+                <h2>Typical GitHub flow</h2>
+                <ol>
+                    <li>Fork or clone the repo: <code>git clone &lt;url&gt;</code></li>
+                    <li>Create a feature branch: <code>git checkout -b my-feature</code></li>
+                    <li>Work, add, commit locally</li>
+                    <li>Push your branch: <code>git push origin my-feature</code></li>
+                    <li>Open a Pull Request on GitHub and request review</li>
+                </ol>
+            </section>
 
-    <section>
-        <h2>Helpful files</h2>
-        <ul>
-            <li><code>README.md</code> — project overview and instructions</li>
-            <li><code>.gitignore</code> — files to exclude from commits</li>
-        </ul>
-    </section>
+            <section>
+                <h2>Helpful files</h2>
+                <ul>
+                    <li><code>README.md</code> — project overview and instructions</li>
+                    <li><code>.gitignore</code> — files to exclude from commits</li>
+                </ul>
+            </section>
 
-    <footer>
-        Tip: practice by creating a small repo, making commits, and pushing to GitHub.
-    </footer>
-</body>
+            <footer>
+                Tip: practice by creating a small repo, making commits, and pushing to GitHub.
+            </footer>
+        </div>
+    </body>
 </html>
