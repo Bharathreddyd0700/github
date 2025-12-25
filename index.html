@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Git & GitHub — Basics</title>
+    <style>
+        body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial; max-width: 900px; margin: 3rem auto; line-height:1.6; padding: 0 1rem; }
+        header { border-bottom: 1px solid #e6e6e6; margin-bottom: 1.5rem; }
+        h1 { margin: 0.2rem 0 0.6rem; }
+        pre { background:#f6f8fa; padding:0.75rem; overflow:auto; border-radius:6px; }
+        code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Courier New", monospace; }
+        section { margin-bottom:1.25rem; }
+        ul { margin:0.25rem 0 0 1.2rem; }
+        footer { color:#6b6b6b; font-size:0.9rem; margin-top:2rem; border-top:1px solid #eee; padding-top:0.8rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Git & GitHub — Quick Starter</h1>
+        <p>A tiny reference page with common commands and workflow for learning Git and GitHub.</p>
+    </header>
+
+    <section>
+        <h2>Initialize a repo</h2>
+        <p>Create a local repository and make your first commit:</p>
+        <pre><code>git init
+git add README.md
+git commit -m "Initial commit"</code></pre>
+    </section>
+
+    <section>
+        <h2>Common commands</h2>
+        <ul>
+            <li>Check status: <code>git status</code></li>
+            <li>See history: <code>git log --oneline --graph --all</code></li>
+            <li>Create branch: <code>git checkout -b feature</code></li>
+            <li>Switch branch: <code>git checkout main</code></li>
+            <li>Merge: <code>git merge feature</code></li>
+            <li>Stash changes: <code>git stash</code></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Connect to GitHub</h2>
+        <p>Link local repo to a remote and push:</p>
+        <pre><code>git remote add origin https://github.com/username/repo.git
+git branch -M main
+git push -u origin main</code></pre>
+    </section>
+
+    <section>
+        <h2>Typical GitHub flow</h2>
+        <ol>
+            <li>Fork or clone the repo: <code>git clone &lt;url&gt;</code></li>
+            <li>Create a feature branch: <code>git checkout -b my-feature</code></li>
+            <li>Work, add, commit locally</li>
+            <li>Push your branch: <code>git push origin my-feature</code></li>
+            <li>Open a Pull Request on GitHub and request review</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Helpful files</h2>
+        <ul>
+            <li><code>README.md</code> — project overview and instructions</li>
+            <li><code>.gitignore</code> — files to exclude from commits</li>
+        </ul>
+    </section>
+
+    <footer>
+        Tip: practice by creating a small repo, making commits, and pushing to GitHub.
+    </footer>
+</body>
+</html>
